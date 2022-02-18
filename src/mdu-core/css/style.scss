@@ -32,8 +32,6 @@
     }
   }
 
-  
-
   &__grayContent {
     padding: 17px 12px;
     background: global.$gray-200;
@@ -52,13 +50,6 @@
       flex-direction: row-reverse;
     }
   }
-
-  // &__productDescriptionTablet {
-  //   @include global.device(md) {
-  //     display: flex;
-  //     flex-direction: row-reverse;
-  //   }
-  // }
 
   &__productImage {
     margin-top: 25px;
