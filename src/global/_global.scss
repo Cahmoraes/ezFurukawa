@@ -1,6 +1,7 @@
 @forward './mixins';
 @forward './function';
 
+@use './module/module';
 @import './variables';
 
 body {

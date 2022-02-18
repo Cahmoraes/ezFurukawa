@@ -13,46 +13,26 @@
 
   &__firstContent {
     padding: 26px 12px;
-    h1 {
-      margin-bottom: 15px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      color: global.$blue-500;
-      @include global.device(md) {
-        font-size: 24px;
-      }
-      @include global.device(lg) {
-        font-size: 36px;
-      }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: global.$blue-500;
+
+    @include global.device(md) {
+      font-size: 24px;
+    }
+
+    @include global.device(lg) {
+      font-size: 36px;
     }
   }
 
-  &__itemDescription {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    img {
-      width: 13.5px;
-      height: 13.5px;
-    }
-    span {
-      padding-left: 6.25px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
-      color: global.$gray-700;
-      @include global.device(md) {
-        font-family: global.$type-secondary;
-        font-size: 16px;
-      }
-      @include global.device(md) {
-        font-size: 18px;
-      }
-    }
-  }
+  
 
   &__grayContent {
     padding: 17px 12px;
@@ -67,14 +47,18 @@
     @include global.device(md) {
       display: flex;
     }
-  }
 
-  &__productDescriptionTablet {
-    @include global.device(md) {
-      display: flex;
+    &--reverse {
       flex-direction: row-reverse;
     }
   }
+
+  // &__productDescriptionTablet {
+  //   @include global.device(md) {
+  //     display: flex;
+  //     flex-direction: row-reverse;
+  //   }
+  // }
 
   &__productImage {
     margin-top: 25px;
@@ -87,27 +71,6 @@
     &--img {
       max-width: 245px;
       width: 100%;
-    }
-  }
-
-  &__numberTitle {
-    margin-top: 26px;
-    display: flex;
-    align-items: center;
-    &--number {
-      width: 26px;
-      height: 26px;
-    }
-    h3 {
-      margin-left: 10px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 27px;
-      color: global.$blue-500;
-      @include global.device(md) {
-        font-size: 20px;
-      }
     }
   }
 

@@ -1,19 +1,83 @@
-/* Error: Expected identifier.
- *   ,
- * 3 | @function toRem($px) {
- *   |                       ^
- *   '
- *   src\global\_function.scss 3:23    @forward
- *   src\global\_global.scss 2:1       @use
- *   src\mdu-riser\css\style.scss 1:1  root stylesheet */
+.c-checkbox {
+  width: 13.5px;
+  height: 13.5px;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a   \2577 \a 3 \2502  @function toRem($px) {\d\a   \2502                        ^\a   \2575 \a   src\\global\\_function.scss 3:23    @forward\a   src\\global\\_global.scss 2:1       @use\a   src\\mdu-riser\\css\\style.scss 1:1  root stylesheet";
+.c-product-description {
+  display: flex;
+  flex-direction: column;
+}
+.c-product-description__numberTitle {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.c-product-description__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  color: #0d97c6;
+}
+@media screen and (min-width: 768px) {
+  .c-product-description__title {
+    font-size: 20px;
+  }
+}
+.c-product-description__number {
+  width: 26px;
+  height: 26px;
+}
+.c-product-description__item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.c-product-description__info {
+  padding-left: 6.25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2f3033;
+}
+@media screen and (min-width: 768px) {
+  .c-product-description__info {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-product-description__info {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: yellow;
+}
+@media screen and (min-width: 768px) {
+  body {
+    color: tomato;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    color: blue;
+    font-size: 2rem;
+  }
 }
