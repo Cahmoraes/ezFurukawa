@@ -1,0 +1,162 @@
+@use "../../global/global";
+
+.ez-container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  &__topImage,
+  &__bottomImage {
+    width: 100%;
+  }
+
+  &__firstContent {
+    padding: 26px 12px;
+    h1 {
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: global.$blue-500;
+      @include global.device(md) {
+        font-size: 24px;
+      }
+      @include global.device(lg) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__itemDescription {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    img {
+      width: 13.5px;
+      height: 13.5px;
+    }
+    span {
+      padding-left: 6.25px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: global.$gray-700;
+      @include global.device(md) {
+        font-family: global.$type-secondary;
+        font-size: 16px;
+      }
+      @include global.device(md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__grayContent {
+    padding: 17px 12px;
+    background: global.$gray-200;
+    @include global.device(lg) {
+      border-radius: 0px 20px 20px 0px;
+      max-width: 1019px;
+    }
+  }
+
+  &__productDescription {
+    @include global.device(md) {
+      display: flex;
+    }
+  }
+
+  &__productDescriptionTablet {
+    @include global.device(md) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__productImage {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include global.device(md) {
+      max-width: 287px;
+    }
+    &--img {
+      max-width: 245px;
+      width: 100%;
+    }
+  }
+
+  &__numberTitle {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    &--number {
+      width: 26px;
+      height: 26px;
+    }
+    h3 {
+      margin-left: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 27px;
+      color: global.$blue-500;
+      @include global.device(md) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__separator {
+    padding: 15px 0;
+    border-bottom: 0.5px solid global.$blue-300;
+    @include global.device(lg) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__button {
+    padding: 37px 12px;
+    display: flex;
+    justify-content: center;
+    button {
+      background: global.$red-800;
+      border: none;
+      border-radius: 10px;
+      height: 40px;
+      width: 292px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 36px;
+      color: global.$white;
+      @include global.device(md) {
+        width: 577px;
+        height: 50px;
+        font-size: 20px;
+      }
+      @include global.device(lg) {
+        height: 75px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__buldingImage {
+    display: none;
+    @include global.device(lg) {
+      max-width: 318px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 190px;
+      left: 1010px;
+    }
+  }
+}
