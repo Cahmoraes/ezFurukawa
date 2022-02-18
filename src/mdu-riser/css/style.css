@@ -1,27 +1,19 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 3 | @function toRem($px) {
+ *   |                       ^
+ *   '
+ *   src\global\_function.scss 3:23    @forward
+ *   src\global\_global.scss 2:1       @use
+ *   src\mdu-riser\css\style.scss 1:1  root stylesheet */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Inter", sans-serif;
-}
-
-body {
-  color: yellow;
-}
-@media screen and (min-width: 768px) {
-  body {
-    color: tomato;
-  }
-}
-@media screen and (min-width: 992px) {
-  body {
-    color: blue;
-    font-size: 32, 16rem;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 3 \2502  @function toRem($px) {\d\a   \2502                        ^\a   \2575 \a   src\\global\\_function.scss 3:23    @forward\a   src\\global\\_global.scss 2:1       @use\a   src\\mdu-riser\\css\\style.scss 1:1  root stylesheet";
 }
