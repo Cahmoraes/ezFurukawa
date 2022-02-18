@@ -1,10 +1,5 @@
 @use 'sass:math';
 
 @function toRem($px) {
-<<<<<<< HEAD
-  @return ($px, 16) + rem;
-}
-=======
   @return math.div($px, 16) + rem
 }
->>>>>>> 0f47190ac914022a693840b4ae1f3957ad22b875
